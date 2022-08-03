@@ -1,0 +1,39 @@
+:root{
+    background: black;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#background{
+    position: relative;
+    background: orange;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-content: flex-end flex-end;
+    flex-flow: row nowrap;
+}
+
+#heroImage{
+    position: relative;
+    background-image: url(./heroImage.jpg);
+    background-size: auto 100vh;
+    display: flex;
+    background-position: flex-start;
+    background-repeat: no-repeat;
+    flex-flow: row wrap;
+    flex:1;
+}
+
+#one{
+position: absolute;
+width: 70vw;
+height: 100vh;
+background: black;
+display: flex;
+flex:2;
+}
