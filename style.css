@@ -12,8 +12,9 @@
     padding: 0px;
     font-family: "Lato";
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 40px;
+    color: rgb(188, 172, 186);
 }
 
 #background {
@@ -40,10 +41,11 @@
 
 #logoContainer {
     background: rgba(0, 0, 0, 0.9);
-    width: 30vw;
+    width: 35vw;
     height: 200px;
     flex-flow: row nowrap;
     display: flex;
+    margin-bottom: 43vh;
     place-content: center center;
     place-items: center center;
 }
@@ -57,24 +59,41 @@
 
 #contentContainer {
     position: absolute;
-    width: 70vw;
+    width: 65vw;
     height: 100vh;
     background: black;
+    padding: 10px;
     display: flex;
-    place-content: center center;
-    place-items: center center;
+    place-content: space-evenly flex-start;
+    place-items: space-evenly flex-start;
+    flex-flow: column nowrap;
     flex: 2;
 }
 
 #headlineContainer {
+    margin-top: 100px;
+    position: static;
+    display: flex;
     padding: 20px;
     color: white;
-    width: 700px;
-    height: 500px;
+    width: 45vw;
+    height: auto;
+    flex-flow: column wrap;
+    /* border: 1px solid white; */
+}
+
+#formBackground {
+    position: static;
+    margin-top: 5vh;
+    width: 65vw;
+    height: 40vh;
+    display: flex;
+    background: rgb(188, 172, 186);
+    box-shadow: 2px 2px 7px 4px rgba(211, 54, 185, 0.5);
 }
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 690px) {
     * {
         font-size: 20px;
         line-height: 30px;
@@ -96,6 +115,7 @@
     #logoContainer {
         width: 100vw;
         height: 100px;
+        margin-bottom: 0vh;
     }
 
     #logo {
@@ -106,8 +126,16 @@
     #contentContainer {
         position: static;
         width: auto;
-        place-content: flex-start center;
-        place-items: flex-start center;
+        place-content: center center;
+        place-items: center center;
         flex: 4;
+    }
+
+    #headlineContainer {
+        width: auto;
+    }
+
+    #formBackground {
+        width: 100vw;
     }
 }
