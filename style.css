@@ -1,14 +1,22 @@
-:root{
+@font-face {
+    font-family: "Lato";
+    src: var(url(fonts/Lato-Thin.ttf), );
+}
+
+:root {
     background: black;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    font-family: "Lato";
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-#background{
+#background {
     position: relative;
     background: orange;
     width: 100vw;
@@ -18,7 +26,7 @@
     flex-flow: row nowrap;
 }
 
-#heroImage{
+#heroImage {
     position: relative;
     background-image: url(./heroImage.jpg);
     background-size: auto 100vh;
@@ -27,10 +35,10 @@
     background-repeat: no-repeat;
     flex-flow: row nowrap;
     place-items: center flex-start;
-    flex:1;
+    flex: 1;
 }
 
-#logoContainer{
+#logoContainer {
     background: rgba(0, 0, 0, 0.9);
     width: 30vw;
     height: 200px;
@@ -38,55 +46,68 @@
     display: flex;
     place-content: center center;
     place-items: center center;
-    /* border: 1px solid white; */
 }
 
-#logo{
+#logo {
     background: url(logo.svg) no-repeat center;
     width: 200px;
     height: 200px;
 }
 
 
-#one{
-position: absolute;
-width: 70vw;
-height: 100vh;
-background: black;
-display: flex;
-flex:2;
+#contentContainer {
+    position: absolute;
+    width: 70vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    place-content: center center;
+    place-items: center center;
+    flex: 2;
+}
+
+#headlineContainer {
+    padding: 20px;
+    color: white;
+    width: 700px;
+    height: 500px;
 }
 
 
 @media all and (max-width: 600px) {
-    #background{
+    * {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #background {
         position: static;
         flex-direction: column;
         place-content: center center;
     }
 
-    #heroImage{
+    #heroImage {
         position: static;
         width: auto;
         height: auto;
         background-position: center;
     }
 
-    #one{
-        position: static;
-        width: auto; 
-        flex: 4;
-    }
-
-    #logoContainer{
+    #logoContainer {
         width: 100vw;
         height: 100px;
     }
 
-    #logo{
+    #logo {
         width: 100px;
         height: 100px;
     }
 
- 
+    #contentContainer {
+        position: static;
+        width: auto;
+        place-content: flex-start center;
+        place-items: flex-start center;
+        flex: 4;
+    }
 }
