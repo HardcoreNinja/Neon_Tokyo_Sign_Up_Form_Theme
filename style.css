@@ -28,9 +28,11 @@
 }
 
 #heroImage {
+    min-width: 100vw;
+    min-height: auto;
     position: relative;
     background-image: url(./heroImage.jpg);
-    background-size: auto 100vh;
+    background-size: 100vw auto;
     display: flex;
     background-position: flex-start;
     background-repeat: no-repeat;
@@ -62,12 +64,11 @@
     width: 65vw;
     height: 100vh;
     background: black;
-    padding: 10px;
     display: flex;
     place-content: space-evenly flex-start;
     place-items: space-evenly flex-start;
     flex-flow: column nowrap;
-    flex: 2;
+    flex: 1;
 }
 
 #headlineContainer {
@@ -137,5 +138,6 @@
 
     #formBackground {
         width: 100vw;
+        height: 30vh;
     }
 }
