@@ -37,3 +37,24 @@ background: black;
 display: flex;
 flex:2;
 }
+
+
+@media all and (max-width: 600px) {
+    #background{
+        position: static;
+        flex-direction: column;
+    }
+
+    #heroImage{
+        position: static;
+        width: auto;
+        height: auto;
+        background-position: center;
+    }
+
+    #one{
+        position: static;
+        width: auto; 
+        flex: 4;
+    }
+}
