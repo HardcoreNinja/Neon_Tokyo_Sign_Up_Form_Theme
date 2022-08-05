@@ -89,7 +89,7 @@
     width: 65vw;
     height: 40vh;
     display: flex;
-    background: rgb(188, 172, 186);
+    background: rgba(40, 40, 40, .9);
     box-shadow: 2px 2px 7px 4px rgba(211, 54, 185, 0.5);
 }
 
