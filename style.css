@@ -60,6 +60,8 @@
 
 
 #contentContainer {
+    padding-left: 10px;
+    padding-right: 10px;
     position: absolute;
     width: 65vw;
     height: 100vh;
