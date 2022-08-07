@@ -19,7 +19,7 @@
 
 #background {
     position: relative;
-    background: orange;
+    background: black;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -97,7 +97,8 @@
     box-shadow: 2px 2px 7px 4px rgba(211, 54, 185, 0.5);
 }
 
-#formBoxContainer{
+#formBoxContainer {
+    margin-top: 5%;
     /* background: blue; */
     width: 50vw;
     height: auto;
@@ -105,10 +106,11 @@
     place-content: flex-start flex-start;
 }
 
-label{
+label {
     font-size: 15px;
 }
-input{
+
+input {
     font-size: 15px;
     width: auto;
     height: 25px;
@@ -117,7 +119,7 @@ input{
     box-shadow: 2px 2px 7px 4px rgba(211, 54, 185, 0.5);
 }
 
-.formBox{
+.formBox {
     width: 200px;
     height: auto;
     /* background: orange; */
@@ -126,7 +128,7 @@ input{
     display: inline-flex;
 }
 
-.push{
+.push {
     margin-right: 20%;
 }
 
@@ -144,16 +146,20 @@ input{
     }
 
     #heroImage {
-        position: sticky;
+        min-width: auto;
+        min-height: 240px;
+        position: static;
         width: auto;
-        height: 300px;
         background-position: center;
+        flex: 1;
     }
 
     #logoContainer {
+        padding: 0px;
         width: 100vw;
         height: 100px;
         margin-bottom: 0vh;
+        position: relative;
     }
 
     #logo {
@@ -166,10 +172,11 @@ input{
         width: auto;
         place-content: center center;
         place-items: center center;
-        flex: 3;
+        flex: 1;
     }
 
     #headlineContainer {
+        margin-top: 20px;
         width: auto;
     }
 
@@ -179,27 +186,41 @@ input{
         place-content: flex-start center;
     }
 
-    input{
+    input {
         width: 200px;
         height: 25px;
     }
 
-    #formBoxContainer{
+    #formBoxContainer {
+        margin-top: 0%;
+        padding: 0%;
         width: auto;
         height: auto;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         place-content: flex-start flex-start;
     }
 
-    .push{
+    .push {
         margin-right: 10%;
     }
-    
+
 }
 
 @media all and (max-width: 1020px) {
-    #formBoxContainer{
+    #formBoxContainer {
         width: auto
     }
+}
 
+
+@media all and (max-height: 700px) {
+    #logoContainer {
+        margin-top: auto;
+    }
+}
+
+@media all and (min-height: 1280px) {
+    #contentContainer {
+        min-height: 70vh;
+    }
 }
