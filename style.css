@@ -65,7 +65,7 @@
     padding: 20px;
     position: absolute;
     width: 65vw;
-    height: 100vh;
+    height: auto;
     background: black;
     display: flex;
     place-content: space-evenly flex-start;
