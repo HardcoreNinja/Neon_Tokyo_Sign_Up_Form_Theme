@@ -30,8 +30,10 @@
 #heroImage {
     min-width: 100vw;
     min-height: auto;
+    width: auto;
+    height: 100vh;
     position: relative;
-    background-image: url(./heroImage.jpg);
+    background-image: url(./heroImage2.jpg);
     background-size: 100vw auto;
     display: flex;
     background-position: flex-start;
@@ -229,8 +231,8 @@ a:hover {
     }
 
     #formBackground {
-        width: 90vw;
-        height: 300px;
+        width: auto;
+        height: auto;
         place-content: flex-start center;
     }
 
@@ -241,11 +243,15 @@ a:hover {
 
     #formBoxContainer {
         margin-top: 0%;
-        padding: 0%;
+        padding: 40px;
         width: auto;
         height: auto;
         flex-flow: row nowrap;
-        place-content: flex-start flex-start;
+        place-content: center center;
+    }
+
+    .formBox{
+        display: flex;
     }
 
     .push {
@@ -261,7 +267,7 @@ a:hover {
 }
 
 
-@media all and (max-height: 700px) {
+@media all and (max-height: 900px) {
     #logoContainer {
         margin-top: auto;
     }
