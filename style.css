@@ -183,7 +183,7 @@ a:hover {
 }
 
 
-@media all and (max-width: 820px) {
+@media all and (max-width: 1024px) {
     * {
         font-size: 20px;
         line-height: 30px;
@@ -205,7 +205,6 @@ a:hover {
     }
 
     #logoContainer {
-        padding: 0px;
         width: 100vw;
         height: 100px;
         margin-bottom: 0vh;
@@ -256,25 +255,5 @@ a:hover {
 
     .push {
         margin-right: 10%;
-    }
-
-}
-
-@media all and (max-width: 1020px) {
-    #formBoxContainer {
-        width: auto
-    }
-}
-
-
-@media all and (max-height: 900px) {
-    #logoContainer {
-        margin-top: auto;
-    }
-}
-
-@media all and (min-height: 1280px) {
-    #contentContainer {
-        min-height: 70vh;
     }
 }
