@@ -20,21 +20,21 @@
 #background {
     position: relative;
     background: black;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     display: flex;
     place-content: flex-end flex-end;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 }
 
 #heroImage {
-    min-width: 100vw;
-    min-height: auto;
+    min-width: auto;
+    min-height: 100vh;
     width: auto;
-    height: 100vh;
+    height: auto;
     position: relative;
     background-image: url(./heroImage2.jpg);
-    background-size: 100vw auto;
+    background-size: auto 100vh;
     display: flex;
     background-position: flex-start;
     background-repeat: no-repeat;
