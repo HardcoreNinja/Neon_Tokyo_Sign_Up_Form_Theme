@@ -35,37 +35,40 @@
 
                         <div class="formBox firstName push">
                             <label for="firstName">First Name:</label>
-                            <input type="text" id="firstName">
+                            <input type="text" id="firstName" required>
                         </div>
 
                         <div class="formBox lastName">
                             <label for="lastName">Last Name:</label>
-                            <input type="text" id="lastName">
+                            <input type="text" id="lastName" required>
                         </div>
 
                         <div class="formBox email push">
                             <label for="email">Email:</label>
-                            <input type="email" id="lastNemailame">
+                            <input type="email" id="lastNemailame" required>
                         </div>
 
                         <div class="formBox phoneNumber">
                             <label for="phoneNumber">Phone Number:</label>
-                            <input type="text" id="phoneNumber">
+                            <input type="text" id="phoneNumber" required>
                         </div>
 
                         <div class="formBox password push">
                             <label for="password">Password:</label>
-                            <input type="password" id="password">
+                            <input type="password" id="password" required>
                         </div>
 
                         <div class="formBox confirmPassword">
                             <label for="confirmPassword">Confirm Password:</label>
-                            <input type="password" id="confirmPassword">
+                            <input type="password" id="confirmPassword" required>
                         </div>
-
-                    </form>
                 </div>
+            </div>
+            <button type="submit" id="submitButton">Submit</button>
+            </form>
 
+            <div id="haveAccount">
+                <p>Already have an account? <a href="myaccount.com">Log in</a></p>
             </div>
         </div>
 
