@@ -95,7 +95,7 @@
     flex-flow: column nowrap;
     padding: 20px;
     place-content: flex-start flex-start;
-    background: rgba(40, 40, 40, .9);
+    background: rgb(29, 33, 37);
     box-shadow: 2px 2px 7px 4px rgba(214, 0, 107, 0.5);
 }
 
