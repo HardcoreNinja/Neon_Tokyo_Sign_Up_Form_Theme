@@ -14,7 +14,7 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 40px;
-    color: rgb(188, 172, 186);
+    color: rgb(221, 219, 248);
 }
 
 #background {
@@ -79,7 +79,7 @@
     position: static;
     display: flex;
     padding: 10px;
-    color: white;
+    color: rgb(221, 219, 248);
     width: 45vw;
     height: auto;
     flex-flow: column wrap;
@@ -96,7 +96,7 @@
     padding: 20px;
     place-content: flex-start flex-start;
     background: rgba(40, 40, 40, .9);
-    box-shadow: 2px 2px 7px 4px rgba(211, 54, 185, 0.5);
+    box-shadow: 2px 2px 7px 4px rgba(214, 0, 107, 0.5);
 }
 
 #formBoxContainer {
@@ -117,8 +117,8 @@ input {
     width: auto;
     height: 25px;
     background-color: rgba(40, 40, 40, .9);
-    border: 1px solid rgba(211, 54, 185, 0.5);
-    box-shadow: 2px 2px 7px 4px rgba(211, 54, 185, 0.5);
+    border: 1px solid rgba(214, 0, 107, 0.5);
+    box-shadow: 2px 2px 7px 4px rgba(214, 0, 107, 0.5);
     transition: .5s;
 }
 
@@ -127,8 +127,8 @@ input:focus {
     outline: none;
     transform: scale(1.15);
     transition: .5;
-    box-shadow: 2px 2px 7px 4px rgb(22, 209, 250, 0.5);
-    border: 1px solid rgb(22, 209, 250);
+    box-shadow: 2px 2px 7px 4px rgb(0, 145, 200, 0.5);
+    border: 1px solid rgb(0, 145, 200);
 
 }
 
@@ -149,7 +149,7 @@ input:focus {
     width: 200px;
     height: auto;
     font-family: "Lato";
-    background: magenta;
+    background: rgba(214, 0, 107, 1);
     border: 1px solid black;
     color: black;
     border-radius: 5%;
@@ -160,7 +160,7 @@ input:focus {
 button:hover,
 button:active {
     transform: scale(1.15);
-    box-shadow: 2px 2px 7px 4px rgba(211, 54, 185, 0.5);
+    box-shadow: 2px 2px 7px 4px rgba(214, 0, 107, 0.5);
 }
 
 #haveAccount {
@@ -174,12 +174,12 @@ a {
 }
 
 a:link {
-    color: magenta;
+    color: rgba(214, 0, 107, 1);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(22, 209, 250);
+    color: rgb(0, 145, 200);
 }
 
 
